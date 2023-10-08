@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="post-content " data-test-label="post-content">
+
+        <p>When you are building a new website, it is important to have a good starting foundation. In this article, I
+            will explain what an HTML 5 boilerplate is and how to create a basic template to use in your projects. </p>
+        <h2 id="what-is-an-html-5-boilerplate">What is an HTML 5 boilerplate?</h2>
+        <p>According to <a href="https://en.wikipedia.org/wiki/Boilerplate_code#HTML">Wikipedia</a>, </p>
+        <blockquote><strong>boilerplate code</strong> or just <strong>boilerplate</strong> are sections of code that are
+            repeated in multiple places with little to no variation.</blockquote>
+        <p>A boilerplate in HTML is a template you will add at the start of your project. You should add this
+            boilerplate to all of your HTML pages. </p>
+        <h2 id="example-of-html-5-boilerplate">Example of HTML 5 boilerplate</h2>
+        <p>Let's take a look at a basic example.</p>
+        <pre class="language-html"
+            tabindex="0"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>X-UA-Compatible<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ie=edge<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>HTML 5 Boilerplate<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>style.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>index.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <h3 id="what-is-a-doctype-in-html">What is a doctype in HTML?</h3>
+        <p>The first line in your HTML code should be the doctype declaration. A doctype tells the browser what version
+            of HTML the page is written in. </p>
+        <pre class="language-html"
+            tabindex="0"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <p>If you forget to include this line of code in your file, then some of the HTML 5 tags like
+            <code>&lt;article&gt;</code>, <code>&lt; footer &gt;</code>, and <code>&lt;header&gt;</code> &nbsp;may not
+            be supported by the browser.
+        </p>
+        <h3 id="what-is-the-html-root-element">What is the HTML root element?</h3>
+        <p>The <code>&lt;html&gt;</code> tag is the top level element of the HTML file. You will nest the
+            <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> tags inside of it.
+        </p>
+        <pre class="language-html"
+            tabindex="0"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <p>The <code>lang</code> attribute inside the opening <code>&lt;html&gt;</code> tag sets the language for the
+            page. It is also good to include it for accessibility reasons, because screen readers will know how to
+            properly pronounce the text. </p>
+        <h3 id="what-are-head-tags-in-html">What are head tags in HTML?</h3>
+        <p>The <code>&lt;head&gt;</code> tags contain information that is processed by machines. Inside the
+            <code>&lt;head&gt;</code> tags, you will nest metadata which is data that describes the document to the
+            machine.
+        </p>
+        <pre class="language-html"
+            tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>X-UA-Compatible<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ie=edge<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>HTML 5 Boilerplate<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>style.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <h3 id="what-is-utf-8-character-encoding">What is UTF-8 character encoding?</h3>
+        <p>UTF-8 is the standard character encoding you should use in your web pages. This will usually be the first
+            <code>&lt;meta&gt;</code> tag shown in the <code>&lt;head&gt;</code> element.
+        </p>
+        <pre class="language-html"
+            tabindex="0"><code class="language-html"> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+        <p>According to the <a href="https://www.w3.org/International/questions/qa-choosing-encodings">World Wide Web
+                Consortium</a>, </p>
+        <blockquote>A Unicode-based encoding such as UTF-8 can support many languages and can accommodate pages and
+            forms in any mixture of those languages. Its use also eliminates the need for server-side logic to
+            individually determine the character encoding for each page served or each incoming form submission.
+        </blockquote>
+        <h3 id="what-is-the-viewport-meta-tag-in-html">What is the viewport meta tag in HTML?</h3>
+        <p>This tag renders the width of the page to the width of the device's screen size. If you have a mobile device
+            that is 600px wide, then the browser window will also be 600px wide.</p>
+        <p>The initial-scale controls the zoom level. The value of 1 for the initial-scale prevents the default zoom by
+            browsers. </p>
+        <pre class="language-html" tabindex="0"><code class="language-html">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        </code></pre>
+        <h3 id="what-does-x-ua-compatible-mean">What does X-UA-Compatible mean?</h3>
+        <p>This <code>&lt;meta&gt;</code> tag specifies the document mode for Internet Explorer. <code>IE=edge</code> is
+            the highest supported mode. </p>
+        <pre class="language-html" tabindex="0"><code class="language-html">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>X-UA-Compatible<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ie=edge<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        </code></pre>
+        <h3 id="what-are-html-title-tags">What are HTML title tags?</h3>
+        <p>The <code>&lt;title&gt;</code> tag is the title for the web page. This text is shown in the browser's title
+            bar.</p>
+        <pre class="language-html" tabindex="0"><code class="language-html">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>HTML 5 Boilerplate<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+        </code></pre>
+        <figure class="kg-card kg-image-card"><img
+                src="https://www.freecodecamp.org/news/content/images/2021/07/Screen-Shot-2021-07-30-at-4.15.25-AM.png"
+                class="kg-image" alt="Screen-Shot-2021-07-30-at-4.15.25-AM" width="600" height="400" loading="lazy">
+        </figure>
+        <h3 id="css-stylesheet">CSS stylesheet</h3>
+        <p>This code will link your custom CSS to the HTML page. &nbsp;<code>rel="stylesheet"</code> defines the
+            relationship between the HTML file and the external stylesheet. &nbsp;</p>
+        <pre class="language-html" tabindex="0"><code class="language-html">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>style.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        </code></pre>
+        <h3 id="script-tags-in-html">Script tags in HTML</h3>
+        <p>External script tags will be placed just before the ending body tag. This is where you can link your external
+            JavaScript code. </p>
+        <pre class="language-html" tabindex="0"><code class="language-html">	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>index.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+        </code></pre>
+        <h2 id="conclusion">Conclusion</h2>
+        <p>You should add an HTML 5 boilerplate to each of your HTML pages. This starter code contains important
+            information like the doctype, metadata, external stylesheets and script tags. <br></p>
+        <p> &nbsp;</p>
+        <p><br></p>
+        <p><br></p>
+        <p> </p>
+        <p><br></p>
+
+    </section>
+</body>
+
+</html>
