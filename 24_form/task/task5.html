@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="task5_signup-form.png" alt="">
+    <br>
+    <h1>Membership Application</h1>
+    <p>To apply for membership please complete all questions.</p>
+    <br>
+    <hr>
+    <br>
+    <table cellspacing="15px">
+        <tr>
+            <td><label for="name">Name</label></td>
+            <td><input type="text" name="name" id="name"><br>Firstname</td>
+            <td><input type="text" name="lname" id="lname"><br>Lastname</td>
+        </tr>
+        <tr>
+            <td><label for="address">Address</label></td>
+            <td colspan="2"><textarea name="address" id="address" cols="45" rows="1"></textarea><br>Street Address</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2"><textarea name="address" id="address" cols="45" rows="1"></textarea><br>Street Address-line 2</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="text" name="city" id="city"><br>City</td>
+            <td><input type="text" name="state" id="state"><br>State/Province</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="number" name="pin" id="pin"><br>Postal/zip code</td>
+            <td><select name="country" id="country">
+                <option value="" hidden selected>Please Select</option>
+                <option value="ind">India</option>
+                <option value="cad">Canada</option>
+                <option value="us">Usa</option>
+                <option value="aus">Australia</option>
+            </select><br>Country</td>
+        </tr>
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" name="email" id="email" placeholder="ex:myname@email.com"></td>
+        </tr>
+        <tr>
+            <td><label for="phone">Home number</label></td>
+            <td><input type="number" name="code" id="code">-<br>Area code</td>
+            <td><input type="tel" name="tel" id="tel"><br>Phone number</td>
+        </tr>
+        <tr>
+            <td><label for="phone">Cellular number</label></td>
+            <td><input type="number" name="code" id="code">-<br>Area code</td>
+            <td><input type="tel" name="tel" id="tel"><br>Phone number</td>
+        </tr>
+        <tr>
+            <td><label for="phone">Work number</label></td>
+            <td><input type="number" name="code" id="code">-<br>Area code</td>
+            <td><input type="tel" name="tel" id="tel"><br>Phone number</td>
+        </tr>
+        <tr>
+            <td><label for="website">Website</label></td>
+            <td><input type="url" name="website" id="website"></td>
+        </tr>
+    </table>
+</body>
+</html>
