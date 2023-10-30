@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<bodys>
+    <img src="task4_admition_form.png" alt="">
+    <br>
+    <h1>Admission Form</h1>
+    <p>Enter your admission information below</p>
+    <hr>
+    <br>
+    <form action="">
+        <label for="name">Name *</label>
+        <br>
+        <table>
+            <tr>
+                <td><input type="text" name="name" id="name"><br>First name</td>
+                <td><input type="text" name="mname" id="mname"><br>Middle name</td>
+                <td><input type="text" name="lname" id="lname"><br>Last name</td>
+            </tr>
+        </table>
+        <br>
+        <label for="dob">Birthdate *</label>
+        <br>
+        <table>
+            <tr>
+                <td><select name="month" id="dob">
+                    <option value="" hidden></option>
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                </select><br>Month&nbsp;</td>
+                <td><select name="day" id="">
+                    <option value="" hidden></option>
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                </select><br>&nbsp;Day&nbsp;</td>
+                <td><select name="year" id="">
+                    <option value="" hidden></option>
+                    <option value="1">2001</option>
+                    <option value="2">2002</option>
+                    <option value="3">2003</option>
+                </select><br>&nbsp;Year</td>
+            </tr>
+        </table>
+        <br>
+        <label for="gender">Gender</label>
+        <br>
+        <input type="radio" name="gender" id="female">Female <br>
+        <input type="radio" name="gender" id="male">Male <br>
+        <input type="radio" name="gender" id="none">Decline to answer <br>
+        <br>
+        <label for="question">Are you Hispanic or Latino?</label> <br>
+        <input type="radio" name="question" id="Yes">Yes <br>
+        <input type="radio" name="question" id="No">No <br>
+        <input type="radio" name="question" id="none">Decline to answer <br>
+    </form>
+</body>
+</html>

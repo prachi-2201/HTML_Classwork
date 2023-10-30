@@ -1,17 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <img src="task2.gif" alt="" width="400px" height="550px">
+    <h1 align="center">Sign Up</h1>
     <form action="">
-        <table>
-            
+        <table align="center" cellpadding="10px">
+            <tr>
+                <td><label for="name">First, Last Name* : </label></td>
+                <td><input type="text" name="name" id="name"></td>
+                <td><input type="text" name="lname" id="lname"></td>
+            </tr>
+            <tr>
+                <td><label for="org">Organization* :</label></td>
+                <td colspan="2"><input type="text" name="org" id="org" width="80px"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address* :</label></td>
+                <td colspan="2"><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="work">Work Phone :</label></td>
+                <td colspan="2"><input type="number" name="work" id="work"></td>
+            </tr>
+            <tr>
+                <td><label for="home">Home Phone :</label></td>
+                <td colspan="2"><input type="number" name="home" id="home"></td>
+            </tr>
+            <tr>
+                <td><label for="cell">Cell Phone :</label></td>
+                <td colspan="2"><input type="number" name="cell" id="cell"></td>
+            </tr>
+            <tr>
+                <td><label for="fax">Fax :</label></td>
+                <td colspan="2"><input type="number" name="fax" id="fax"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address 1* :</label></td>
+                <td colspan="2"><input type="text" name="address" id="address"></td>
+            </tr>
+            <tr>
+                <td><label for="city">city* :</label></td>
+                <td colspan="2"><select name="city" id="city">
+                        <option value="" hidden selected></option>
+                        <option value="ahm">Ahmedabad</option>
+                        <option value="raj">Rajkot</option>
+                        <option value="sur">Surat</option>
+                        <option value="Bar">Baroda</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="state">State Province :</label></td>
+                <td><input type="text" name="state" id="state"></td>
+            </tr>
+            <tr>
+                <td><label for="pin">Zip Postal Code :</label></td>
+                <td><input type="number" name="pin" id="pin"></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country* :</label></td>
+                <td><input type="text" name="country" id="country"></td>
+            </tr>
+            <tr>
+                <td><label for="field">* Required fields</label></td>
+                <td><input type="button" value="Submit"></td>
+            </tr>
         </table>
     </form>
-    
+
 </body>
+
 </html>
